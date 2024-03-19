@@ -12,6 +12,7 @@
             height:99vh;
             border: 3px solid red;
             overflow:hidden;
+            position: relative;
         }
         #sky{
             position:relative;
@@ -34,10 +35,45 @@
 
         }
 
-        #car{
+        #car>img{
+            width:40vw;
+            height:40vh;
+
             position:absolute;
-            bottom:0;
+            bottom:-85px;
             right:0;
+            left:290px;
+            top:202px;
+            margin:auto;
+
+
+        }
+
+       #car>#wheel1>img{
+            width:130px;
+            height:130px;
+
+            position:absolute;
+            bottom:0px;
+            right:0px;
+            left:-70px;
+            top:420px;
+            margin:auto;
+
+
+        }
+
+
+        #wheel2>img{
+            width:130px;
+            height:130px;
+
+            position:absolute;
+            bottom:80px;
+            right:-650px;
+            left:0;
+            top:px;
+            margin:auto;
 
 
         }
@@ -62,7 +98,18 @@
 
 <div id="car">
     <img src="assests/car.png">
+
+    <div id="wheel1">
+        <img src="assests/wheel.png">
+    </div>
+
+   <div id="wheel2">
+        <img src="assests/wheel.png">
+    </div>
 </div>
+
+
+
 
 </section>
 </body>
