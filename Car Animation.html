@@ -72,11 +72,35 @@
             bottom:80px;
             right:-650px;
             left:0;
-            top:px;
+            top:490px;
             margin:auto;
 
 
         }
+
+        #sectionCar{
+            position:absolute;
+            top:0;
+            botton:0;
+            right:0;
+            left:0;
+            margin:auto;
+        }
+
+        .wheel:hover{
+            transform-origin: center; /* Set the rotation origin to the center */
+            transform: translate(50%, 50%); /* Translate the image back to center */
+            animation: animation 5s linear infinite;
+        }
+
+      /* @keyframes animation{
+           from{
+              transform:rotate(0deg);
+           }
+           to{
+               transform:rotate(360deg);
+           }
+       }*/
 
 
     </style>
@@ -96,17 +120,20 @@
     <img src="assests/road.jpg">
 </div>
 
+    <section id="sectionCar">
 <div id="car">
     <img src="assests/car.png">
 
-    <div id="wheel1">
+    <div  class="wheel" id="wheel1">
         <img src="assests/wheel.png">
     </div>
 
-   <div id="wheel2">
+   <div class="wheel" id="wheel2">
         <img src="assests/wheel.png">
     </div>
+
 </div>
+    </section>
 
 
 
